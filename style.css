@@ -1,71 +1,139 @@
-/* reset basic */
+/*RESET Y CONFIGURACIÓN BASE*/
+/* Elimina mArgenes y paddings por defecto de todos los elementos */
+/* Box-sizing asegura que padding y border se incluyan en el ancho/alto total */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* estilo general*/
+
+/*ESTILOS GENERALES DEL BODY
+Configuración base para toda la página */
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e5e7eb;
-    line-height: 1.6;
+    background-color: #0f172a; /* Fondo oscuro azulado para todo el sitio */
+    color: #e5e7eb; /* Color de texto claro para contraste */
+    line-height: 1.6; /* Espaciado entre lineas para mejor legibilidad */
 }
 
-/* estilos para el header y navegación */
+/*HEADER Y NAVEGACIÓN*/
+/* Barra superior con el logo y menu de navegación */
 header {
-    background-color: #0e1320;
+    background-color: #0e1320; /* Fondo más oscuro que el body */
     color: #fff;
     padding: 15px 40px;
 }
+
+/* Contenedor de navegación - usa flexbox para distribuir elementos */
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    justify-content: center; /* flex centrado */
+    align-items: center; /* Centra verticalmente */
+    gap: 40px; /* Espacio entre el logo y el menú */
 }
 
+/* Logo de la empresa */
 nav h1 {
-    color: #2563eb;
+    color: #2563eb; /* Color azul característico de Nova3D */
 }
 
+/* Lista de enlaces del menú */
+nav ul {
+    font-size: 18px;
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Enlaces en línea horizontal */
+    gap: 20px; /* Espacio entre cada enlace */
+}
 
+/* Enlaces del menú de navegación */
 nav a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; /* Quita el subrayado */
     font-weight: bold;
-    transition: 0.3s;
-}
-nav a:hover {
-    color: #4a82f9;
+    transition: 0.3s; /* Transición suave para el hover */
 }
 
-/* estilos para el main */
+/* Efecto hover en los enlaces del menú */
+nav a:hover {
+    color: #4a82f9; /* Azul más claro al pasar el mouse */
+}
+
+/* ===================================
+   CONTENEDOR PRINCIPAL (MAIN)
+   =================================== */
+/* Contenedor que engloba todas las secciones de contenido */
 main {
     padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Limita el ancho máximo para mejor lectura */
+    margin: 0 auto; /* Centra horizontalmente */
 }
+
+/* Títulos principales de las secciones */
 main h2 {
-    color: #2852a6;
+    color: #2852a6; /* Azul más oscuro para los títulos */
     margin-bottom: 20px;
 }
+
+/* Párrafos dentro del main */
 main p {
     margin-bottom: 20px;
 }
 
-/* estilos para el footer */
+/* ===================================
+   SECCIÓN HERO (PORTADA PRINCIPAL)
+   =================================== */
+/* Sección destacada en la parte superior con mensaje principal */
+.hero {
+    color: #fff;
+    padding: 100px 40px; /* Espaciado generoso arriba y abajo */
+    text-align: center; /* Todo centrado */
+}
+
+/* Título principal de la sección hero */
+.hero h2 {
+    font-size: 60px; /* Tamaño grande para impacto visual */
+    margin-bottom: 20px;
+}
+
+/* Párrafo descriptivo de la sección hero */
+.hero p {
+    font-size: 30px; /* Tamaño grande pero menor que el título */
+    max-width: 950px; /* Limita el ancho para mejor lectura */
+    margin: auto; /* Centra el párrafo */
+    margin-bottom: 30px;
+}
+
+/* ===================================
+   BOTONES
+   =================================== */
+/* Botón de llamada a la acción (CTA) */
+.btn {
+    display: inline-block; /* Permite aplicar padding y mantenerlo en línea */
+    padding: 12px 25px;
+    background-color: #2563eb; /* Color azul distintivo */
+    color: #fff;
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: 0.3s; /* Transición suave para efectos hover */
+}
+
+/* Efecto hover del botón */
+.btn:hover {
+    background-color: #4a82f9; /* Azul más claro al pasar el mouse */
+}
+
+/* ===================================
+   FOOTER (PIE DE PÁGINA)
+   =================================== */
+/* Pie de página con copyright y derechos */
 footer {
-    background-color: #333;
+    background-color: #333; /* Fondo gris oscuro */
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
-    font-size: 14px;
+    margin-top: 40px; /* Separación del contenido principal */
+    font-size: 14px; /* Texto pequeño */
 }
 
 

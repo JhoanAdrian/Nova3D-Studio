@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--configuracion basica de la pagina-->
-    <title>Nova3D</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- CONFIGURACION BASICA DE LA PAGINA -->
+    <title>Nova3D - Estudio de Animación 3D</title>
+    <meta charset="UTF-8"> <!-- Codificacion de caracteres en español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <link rel="stylesheet" href="style.css"> <!-- Hoja de estilos CSS -->
 </head>
 <body>
-    <!-- barra de navegacion-->
+    <!-- HEADER NAVEGACION PRINCIPAL -->
     <header>
         <nav>
-            <h1>Nova3D Studio</h1>
+            <!-- nombre de la empresa (futuro logo de la empresa) -->
+            <h1>Nova3D</h1>
+            
+            <!-- MENU DE NAVEGACION PRINCIPAL -->
             <ul>
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="portafolio.html">Portafolios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <!-- seccion principal-->
+
+    <!--MAIN - CONTENIDO PRINCIPAL DE LA PAGINA-->
     <main>
-        <section>
+        <!-- Seccion Hero: Mensaje principal-->
+        <section class="hero">
             <h2>Transformemos Ideas en Realidad</h2>
             <p>En Nova3D Studio desarrollamos proyectos de animación, modelado y renderizado profesional para empresas y creadores digitales</p>
+            <!-- Boton que lleva al portafolio -->
+            <a href="portafolio.html" class="btn">Nuestros Trabajos</a>
         </section>
-        <section>
-            <h2>Nuestro Enfoque</h2>
-            <p>Cambiamos creatividad, tecnologia, e innovacion para ofrecer soluciones visuakes en el mundo digital</p>
+
+        <!-- Sección Info: Presentacon  empresa -->
+        <section class="info">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Somos un equipo de artistas y desarrolladores apasionados por el mundo de la animación digital. En Nova3D Studio combinamos creatividad, tecnología y diseño para producir experiencias visuales de alta calidad.</p>
+        </section>
+
+        <!-- Sección Servicios: Lista de servicios ofrecidos -->
+        <section class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <!-- Lista de servicios principales que ofrece Nova3D -->
+            <ul>
+                <li>Animación 3D</li>
+                <li>Modelado de Personajes Realistas</li>
+                <li>Renderizado de Escenarios</li>
+                <li>Visualización Arquitectónica</li>
+            </ul>
         </section>
     </main>
 
-    <!-- Pie de pagina-->
+    <!--FOOTER - PIE DE PÁGINA -->
     <footer>
+        <!-- Copyright y derechos reservados -->
         <p>&copy; 2024 Nova3D Studio. Todos los derechos reservados.</p>
     </footer>
-    
-
 </body>
 </html>
