@@ -13,9 +13,17 @@
         <nav>
             <!-- nombre de la empresa (futuro logo de la empresa) -->
             <h1>Nova3D</h1>
+
+            <!-- Control del menu hamburguesa en moviles -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar menu">
+            <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             
             <!-- MENU DE NAVEGACION PRINCIPAL -->
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -27,24 +35,64 @@
 
     <!--MAIN - CONTENIDO PRINCIPAL DE LA PAGINA-->
     <main>
-        <!-- Seccion Hero: Mensaje principal-->
+        <!-- Seccion Hero portada principal  -->
         <section class="hero">
-            <h2>Transformemos Ideas en Realidad</h2>
-            <p>En Nova3D Studio desarrollamos proyectos de animación, modelado y renderizado profesional para empresas y creadores digitales</p>
-            <!-- Boton que lleva al portafolio -->
-            <a href="portafolio.html" class="btn">Nuestros Trabajos</a>
+            <span class="hero-badge">ESTUDIO CREATIVO 3D</span>
+            <h2>Ideas a Realidad</h2>
+            <p>En Nova3D Studio se desarrollan proyectos de animación, modelado y renderizado profesional</p>
+
+            <!-- Acciones principales del hero -->
+            <div class="hero-actions">
+                <a href="portafolio.html" class="btn">Nuestros Trabajos</a>
+                <a href="contacto.html" class="btn btn-secondary">Solicitar Cotizacion</a>
+            </div>
+
+            <!-- Datos for confianza -->
+            <div class="hero-stats">
+                <article>
+                    <h3>+120</h3>
+                    <p>Proyectos entregados</p>
+                </article>
+                <article>
+                    <h3>3 años</h3>
+                    <p>Experiencia en 3D</p>
+                </article>
+                <article>
+                    <h3>98%</h3>
+                    <p>Clientes satisfechos</p>
+                </article>
+            </div>
         </section>
 
-        <!-- Sección Info: Presentacon  empresa -->
+        <!-- Destacados -->
+        <section class="destacados">
+            <h2>Por Que Elegir Nova3D</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Calidad Visual</h3>
+                    <p>Se desarrollan piezas con alto nivel de detalle para impresionar en presentaciones, campañas y lanzamientos.</p>
+                </article>
+                <article class="card">
+                    <h3>Flujo Profesional</h3>
+                    <p>Se trabaja con un flujo de trabajo claro y eficiente .</p>
+                </article>
+                <article class="card">
+                    <h3>Entrega a Tiempo</h3>
+                    <p>Planificamos con cronogramas realistas y acompanamos cada avance para cumplir con fechas clave de tu proyecto.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Info -->
         <section class="info">
             <h2>¿Quiénes Somos?</h2>
             <p>Somos un equipo de artistas y desarrolladores apasionados por el mundo de la animación digital. En Nova3D Studio combinamos creatividad, tecnología y diseño para producir experiencias visuales de alta calidad.</p>
         </section>
 
-        <!-- Sección Servicios: Lista de servicios ofrecidos -->
+        <!-- Seccion servicios -->
         <section class="servicios">
             <h2>Nuestros Servicios</h2>
-            <!-- Lista de servicios principales que ofrece Nova3D -->
+            <!-- Lista de servicios -->
             <ul>
                 <li>Animación 3D</li>
                 <li>Modelado de Personajes Realistas</li>
@@ -54,7 +102,7 @@
         </section>
     </main>
 
-    <!--FOOTER - PIE DE PÁGINA -->
+    <!--FOOTER -->
     <footer>
         <!-- Copyright y derechos reservados -->
         <p>&copy; 2024 Nova3D Studio. Todos los derechos reservados.</p>

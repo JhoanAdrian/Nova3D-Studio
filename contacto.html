@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica de la página -->
+    <title>Contacto - Nova3D</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER: Barra de navegación ===== -->
+    <header>
+        <nav>
+            <!-- Logo de la empresa -->
+            <h1>Nova3D</h1>
+
+            <!-- Control del menu hamburguesa en moviles -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir o cerrar menu">
+            <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menú principal -->
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN: Contenido de la página ===== -->
+    <main>
+
+        <!-- Banner superior de la página -->
+        <section class="page-hero">
+            <h2>Contáctanos</h2>
+            <p>Cuéntanos tu proyecto y te respondemos a la brevedad</p>
+        </section>
+
+        <!-- Contenedor centrado del formulario -->
+        <div class="contacto-contenedor">
+
+            <!-- Formulario de contacto -->
+            <!-- action="" se completará cuando haya backend o servicio de envío -->
+            <form class="form-contacto" action="#" method="post">
+
+                <!-- Campo: Nombre completo -->
+                <div class="form-grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <!-- Campo: Correo electrónico -->
+                <div class="form-grupo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <!-- Campo: Tipo de servicio que necesita -->
+                <div class="form-grupo">
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio">
+                        <option value="">Selecciona un servicio</option>
+                        <option value="animacion">Animación 3D</option>
+                        <option value="modelado">Modelado de Personajes</option>
+                        <option value="renderizado">Renderizado de Escenarios</option>
+                        <option value="arquitectura">Visualización Arquitectónica</option>
+                        <option value="motion">Motion Graphics</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <!-- Campo: Mensaje o descripción del proyecto -->
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Descíbenos tu proyecto..." required></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="btn btn-submit">Enviar mensaje</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER: Pie de página ===== -->
+    <footer>
+        <p>&copy; 2024 Nova3D Studio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
