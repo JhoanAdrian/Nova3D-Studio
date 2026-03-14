@@ -11,9 +11,7 @@
     --white: #ffffff;
 }
 
-/* ==============================
-   RESET BASE
-   ============================== */
+/*RESET BASE*/
 * {
     margin: 0;
     padding: 0;
@@ -30,9 +28,7 @@ body {
         var(--bg-primary);
 }
 
-/* ==============================
-   HEADER Y NAVEGACION
-   ============================== */
+/* HEADER Y NAVEGACION */
 header {
     position: sticky;
     top: 0;
@@ -67,12 +63,12 @@ nav ul {
     gap: 10px;
 }
 
-/* Checkbox oculto para controlar apertura/cierre del menu movil */
+/* checkbox oculto para controlar apertura/cierre del menu movil */
 .nav-toggle {
     display: none;
 }
 
-/* Boton hamburguesa oculto en escritorio */
+/* boton hamburguesa oculto en escritorio */
 .nav-toggle-btn {
     display: none;
     cursor: pointer;
@@ -111,9 +107,7 @@ nav a:hover {
     background-color: rgba(37, 99, 235, 0.24);
 }
 
-/* ==============================
-   CONTENIDO PRINCIPAL
-   ============================== */
+/*CONTENIDO PRINCIPAL */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -134,9 +128,7 @@ main section + section {
     margin-top: 42px;
 }
 
-/* ==============================
-   HERO INICIO
-   ============================== */
+/*HERO INICIO */
 .hero {
     padding: 60px 34px;
     border-radius: 18px;
@@ -208,9 +200,7 @@ main section + section {
     color: #9fb0cb;
 }
 
-/* ==============================
-   BOTONES
-   ============================== */
+/*BOTONES*/
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -236,9 +226,7 @@ main section + section {
     background-color: rgba(37, 99, 235, 0.26);
 }
 
-/* ==============================
-   TARJETAS Y SECCIONES GENERALES
-   ============================== */
+/*TARJETAS Y SECCIONES GENERALES*/
 .info,
 .servicios,
 .destacados,
@@ -300,9 +288,7 @@ main section + section {
     color: #d6e4ff;
 }
 
-/* ==============================
-   HERO PAGINAS INTERIORES
-   ============================== */
+/*HERO PAGINAS INTERIORES*/
 .page-hero {
     text-align: center;
     padding: 52px 28px;
@@ -324,9 +310,7 @@ main section + section {
     margin: 0 auto;
 }
 
-/* ==============================
-   NOSOTROS
-   ============================== */
+/* NOSOTROS */
 .mv-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -334,9 +318,7 @@ main section + section {
     margin-top: 14px;
 }
 
-/* ==============================
-   PORTAFOLIO
-   ============================== */
+/* PORTAFOLIO */
 .card .tag {
     display: inline-block;
     background-color: var(--accent);
@@ -347,9 +329,7 @@ main section + section {
     margin-bottom: 10px;
 }
 
-/* ==============================
-   CONTACTO
-   ============================== */
+/*CONTACTO*/
 .contacto-contenedor {
     max-width: 700px;
     margin: 34px auto 0;
@@ -408,9 +388,7 @@ main section + section {
     border: none;
 }
 
-/* ==============================
-   FOOTER
-   ============================== */
+/*FOOTER */
 footer {
     margin-top: 46px;
     border-top: 1px solid rgba(159, 176, 203, 0.22);
@@ -420,9 +398,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ==============================
-   RESPONSIVE DESIGN
-   ============================== */
+/*RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
     nav ul {
         gap: 8px;
@@ -442,7 +418,7 @@ footer {
         padding: 26px 16px 40px;
     }
 
-    /* Mantiene una barra compacta: logo + hamburguesa */
+    /*barra compacta*/
     nav {
         padding: 14px 16px;
         gap: 12px;
@@ -454,7 +430,7 @@ footer {
         margin-left: auto;
     }
 
-    /* Menu oculto por defecto para evitar barra expandida */
+    /* menu oculto para evitar barra expandida */
     .nav-links {
         display: none;
         width: 100%;
